@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor0: #F20505;
+    --cor1: #F24949;
+    --cor2: #F2CECE;
+    --cor3: #F2F2F2;
+    --cor4: #0D0D0D;
+
+    --fonte-principal: 'Bebas Neue';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+header {
+    color: white;
+    background-image: linear-gradient(to bottom, #494949, #FE0000);
+    padding: 20px;
+    text-align: center;
+    min-height: 150px;
+}
+
+header h1 {
+    font-family: var(--fonte-principal);
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: normal;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.376);
+}
+
+header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: normal;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.455);
+}
+
+nav {
+    background-color: #FE0000;
+    padding-bottom: 14px;
+    
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    background-color: #7c2424;
+    border-radius: 10px;
+    color: #ff5353;
+}
+
+main {
+    min-width: 250px;
+    max-width: 800px;
+    background-color: var(--cor3);
+    margin: auto;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+}
+
+main h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    margin: 20px 0px;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    margin: 30px 0px;
+}
+
+img {
+    width: 100%;
+}
+
+div.video {
+    background-color: #494949;
+    padding: 20px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    color: white;
+    background-color: #ff4c4c;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

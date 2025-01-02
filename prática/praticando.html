@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Who</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @font-face {
+            font-family: 'Doctor Who';
+            src: url(fonte/Doctor-Who.ttf) format(truetype)
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        :root {
+            --cor0: #102357;
+            --cor1: #102372;
+            --cor2: #003D9E;
+            --cor3: #003B7F;
+            --cor4: #003D6E; 
+            --cor5: #2F6DB3;
+        }
+
+        body {
+            background-color: #003B7F;
+            
+        }
+
+        header {
+            min-height: 150px;
+            background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+        }
+
+        header > h1 {
+            font-family: 'Bebas Neue', 'Arial', 'Helvetica', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 3em;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.449);
+            margin-bottom: 20px;
+        }
+
+        header > p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 1.2em;
+            margin: auto;
+            padding: 0px 5px;
+            max-width: 600px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.449);
+        }
+
+        nav {
+            background-color: var(--cor5);
+            padding: 10px;
+            
+        }
+        
+
+        nav > a {
+            color: white;
+            transition-duration: .5s;
+            padding: 10px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        a.externo::after {
+            content: '\1F517';
+        }
+
+        nav > a:hover {
+            background-color: var(--cor0);
+            border-radius: 5px;
+            
+        }
+
+        main {
+            min-width: 250px;
+            max-width: 800px;
+            background-color: white;
+            margin: auto;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
+            
+        }
+
+        main h1 {
+            font-family: 'Doctor Who';
+            font-size: 2em;
+            color: #013067;
+            padding: 4px 13px;
+            font-size: 2.5em;
+            
+        }
+
+        main p {
+            text-indent: 30px;
+            font-size: 1em;
+            text-align: justify;
+            margin: 15px 0px;
+            line-height: 2em;
+        }
+
+        main h2 {
+            font-family: 'Doctor Who';
+            background-image: linear-gradient(to right, var(--cor5), transparent);
+            padding: 10px;
+            color: var(--cor0);
+            font-size: 1.8em;
+        }
+
+        
+
+        main a {
+            font-weight: bold;
+            text-decoration: none;
+            background-color: var(--cor0);
+            color: #489dff;
+            padding: 2px 6px;
+
+        }
+
+        main a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        img#tardis {
+            width: 80%;
+            display: block;
+            margin: auto;
+            margin-bottom: 30px;
+            border: 5px solid var(--cor1);
+        }
+
+        img#interior {
+            margin-bottom: 40px;
+        }
+
+        div.video {
+            background-color: var(--cor0);
+            padding: 20px;
+            margin: 0px -30px 30px -30px;
+            padding-bottom: 58%;
+            position: relative;
+        }
+
+        div.video > iframe {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+        }
+
+        aside {
+            background-color: #026ce6a3;
+            border-radius: 10px;
+            padding: 10px;
+            list-style-position: inside;
+        }
+
+        aside > h3 {
+            color: white;
+            font-size: 1.6em;
+            background-color: #003D6E;
+            margin: -10px -10px 0px -10px;
+            border-radius: 10px 10px 0px 0px;
+            padding: 10px;
+        }
+
+        aside > p {
+            padding: 5px;
+        }
+
+        ol > li {
+            text-indent: 30px;
+            font-size: 1em;
+            line-height: 2em;
+            text-align: justify;
+            margin: 15px 0px;
+        }
+
+        strong {
+            color: var(--cor0);
+        }
+
+        strong > a {
+            text-decoration: none;
+            color: pink;
+        }
+
+        strong > a:visited {
+            color: blue;
+        }
+
+        footer {
+            padding: 5px;
+            background-color: #489dff;
+            margin-top: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+        }
+
+        footer a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer a:visited {
+            color: var(--cor0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Doctor Who</h1>
+        <p>Uma série fantastica para assistir do inicio até a Matt Smith</p>
+        
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Sobre</a>
+        <a href="">Curiosidades</a>
+        <a href="">Info</a>
+    </nav>
+    
+    <main>
+        <article>
+            <h1>Setima temporada</h1>
+            <p>A sétima temporada da série britânica de ficção científica <a href="https://www.google.com/search?q=doctor+who+&sca_esv=ecb9f147afa4a979&rlz=1C1GCEA_enBR1104BR1105&sxsrf=ADLYWIJXlD8KMyi29F9rbF9V5MRjRfHnqQ%3A1735235057788&ei=8ZVtZ_HlL-vc1sQP_qqWMA&ved=0ahUKEwixouKp_sWKAxVrrpUCHX6VBQYQ4dUDCA8&uact=5&oq=doctor+who+&gs_lp=Egxnd3Mtd2l6LXNlcnAiC2RvY3RvciB3aG8gMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg0QABiABBiwAxhDGIoFMg4QABiwAxjkAhjWBNgBATIOEAAYsAMY5AIY1gTYAQEyDhAAGLADGOQCGNYE2AEBMhYQLhiABBiwAxhDGNQCGMgDGIoF2AEBMhMQLhiABBiwAxhDGMgDGIoF2AEBMhYQLhiABBiwAxhDGNQCGMgDGIoF2AEBMhMQLhiABBiwAxhDGMgDGIoF2AEBSJQGUM4FWM4FcAF4AZABAJgBAKABAKoBALgBA8gBAPgBAZgCAaACGpgDAIgGAZAGE7oGBggBEAEYCZIHATGgBwA&sclient=gws-wiz-serp" target="_blank" rel="external" class="externo">Doctor Who</a> teve início a 1 de setembro de 2012 com "Asylum of the Daleks" e terminou em 18 de maio de 2013 com "The Name of the Doctor". É a terceira e ultima temporada de <a href="" class="externo">Matt Smith</a>, <a href="" class="externo">Karen Gillan</a> e <a href="" class="externo">Arthur Darvill</a> como o Décimo primeiro Doutor, Amy e Rory respectivamente. Gillan e Darvill deixaram a série no quinto episódio e foram substituídos por Jenna-Louise Coleman, interpretando Clara Oswald. Smith deixou a série no Especial de Natal de 2013.</p>
+            <img src="imagens/mattsmith.jpeg" alt="">
+            <p>A temporada foi transmitida simultaneamente pela BBC One no Reino Unido, BBC America, nos Estados Unidos, e no Space no Canadá, e também na ABC, na Austrália, exibindo uma semana após o seu lançamento no Reino Unido e América do Norte. A série estreou em 1 de setembro de 2012.[1] e foi ao ar semanalmente até 29 de setembro de 2012. Seis episódios foram transmitidos em 2012, incluindo o especial de Natal "The Snowmen", com os oito episódios programados para a transmissão, a partir de 30 de Março em 2013.[2]</p>
+            
+        </article>
+
+        <article>
+            <h2>Tardis</h2>
+            <p>A TARDIS que O Doutor pilota é um modelo antigo do tipo 40. Ela foi produzida pelos Senhores do Tempo e depois roubada pelo Primeiro Doutor em Gallifrey (planeta natal dele e dos Senhores do Tempo). Ela é muitas vezes chamada de "A TARDIS", pois é a única no universo devido a extinção dos Senhores do Tempo.</p>
+            <div id="imagem"><img src="imagens/tardis.jpg" alt="" id="tardis"></div>
+            <audio preload="metadata"></audio>
+
+            <h2>Circuito Camaleao</h2>
+            <p>Outra característica da TARDIS é sua capacidade de camuflar-se, uma vez pousada. Funcionando corretamente, o circuito camaleão avaliaria o ambiente pouco antes da chegada e mudaria o exterior para se parecer com algo em comum com a paisagem.[4] Em uma ocasião depois de deixar Londres em 1963, o circuito camaleão da TARDIS do Doutor parecia não ter nenhum controle sobre a mudança. No entanto, com o funcionamento normal do mecanismo, ele seria programável a partir de um teclado no console principal da TARDIS. Mais tarde, novos modelos tiveram uma maior flexibilidade. A capacidade do Mestre, de produzir uma coluna em ambientes às vezes contraditórios como o Projeto Pharos ou Heathrow, bem como declaração do Monge de que escolheu deixar sua TARDIS como um sarcófago, talvez indique que os circuitos de modelos posteriores poderiam ser operados manualmente. Esta ideia foi secundada quando o Doutor entrou na TARDIS do Monge e mudou sua aparência de um pilar de pedra para uma caixa de polícia idêntica a sua própria TARDIS.</p>
+            <img src="imagens/interior-tardis.jpg" alt="" id="interior">
+        </article>
+
+       
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9pG3XcazIys?si=eI8p4LsUSNCsKJLT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+
+        <aside>
+            <h3>Curiosidades</h3>
+            <ol>
+                <li>A tão famosa regeneração dos Doutores veio devido à saúde debilitada do Doutor original, William Hartnell, aos seus 60 anos e durante o auge do sucesso da série na Inglaterra. Então, para não deixar com que o sucesso acabasse, os diretores decidiram inventar as regenerações para trocar o papel principal do Doutor.</li>
+                <li>David Tennant e Peter Capaldi - que respectivamente atuaram na décima e na décima segunda regeneração do Doutor- eram fãs da série desde crianças. No entanto, Matt Smith, que interpreta o Décimo Primeiro Doutor, somente conheceu a série durante as audições. Mesmo assim, segundo o IMDB, ele ainda é considerado pelo público um dos melhores atores que já passou pelo papel principal.</li>
+            </ol>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Site criado pela <a href="https://pt.wikipedia.org/wiki/TARDIS" target="black" rel="external">TARDIS</a></p>
+    </footer>
+</body>
+</html>
